@@ -1,3 +1,5 @@
+package pl.jakubkrys.real_estate;
+
 public class RealEstateRepo {
 
     private RealEstate[] realEstates = new RealEstate[100];
@@ -11,7 +13,7 @@ public class RealEstateRepo {
 
     private boolean exist(RealEstate realEstate) {
         for (int i = 0; i < index; i++) {
-            if (realEstates[i].equals(realEstate){
+            if (realEstates[i].equals(realEstate)){
                 return true;
             }
         }
