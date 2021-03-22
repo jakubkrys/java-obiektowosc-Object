@@ -1,3 +1,7 @@
+package pl.jakubkrys.real_estate;
+
+import pl.jakubkrys.real_estate.*;
+
 import java.util.Objects;
 
 public class Address {
