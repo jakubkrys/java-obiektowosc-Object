@@ -5,6 +5,7 @@ public class RealEstateApp {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
+        RealEstateRepo realEstateRepo = new RealEstateRepo();
         int option;
 
         do {
@@ -44,6 +45,7 @@ public class RealEstateApp {
                     realEstateRepo.add(realEstate);
                     break;
                 case 2:
+                    realEstateRepo.displayAll();
                     break;
             }
 

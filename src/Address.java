@@ -13,4 +13,15 @@ public class Address {
         this.postcode = postcode;
         this.city = city;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", houseNumber=" + houseNumber +
+                ", flatNumber=" + flatNumber +
+                ", postcode='" + postcode + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
 }
