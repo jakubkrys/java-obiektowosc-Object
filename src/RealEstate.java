@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class RealEstate {
 
     private int estateNumber;
@@ -23,5 +25,18 @@ public class RealEstate {
                 ", landRegisterNumber='" + landRegisterNumber + '\'' +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        RealEstate that = (RealEstate) o;
+        return estateNumber == that.estateNumber && Objects.equals(bound, that.bound) && Objects.equals(address, that.address) && Objects.equals(landRegisterNumber, that.landRegisterNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(estateNumber, bound, address, landRegisterNumber);
     }
 }
