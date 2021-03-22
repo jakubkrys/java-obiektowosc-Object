@@ -13,7 +13,7 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return  "Dog{" +
+        return  super.toString() + "Dog{" +
                 "sportTrained='" + sportTrained + '\'' +
                 '}';
     }
